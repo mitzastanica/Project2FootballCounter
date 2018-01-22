@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/counter_background"
+    android:scaleType="centerInside">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingTeam"
+                    android:text="@string/Team1"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="@dimen/textSizeTeams"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/team_realmadrid_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:textSize="@dimen/textSizeScore"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/score" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="goalRealMadrid"
+                    android:text="@string/Button1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/fouls_real_madrid"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="foulsRealMadrid"
+                    android:text="@string/Button2"
+                    android:background="@color/colorFoulButton"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/yellow_real_madrid"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="yellowCardRealMadrid"
+                    android:text="@string/Button3"
+                    android:background="@color/colorYellowCardButton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/red_real_madrid"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="redCardRealMadrid"
+                    android:text="@string/Button4"
+                    android:background="@color/colorRedCardButton"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingTeam"
+                    android:text="@string/Team2"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="@dimen/textSizeTeams"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/team_barcelona_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:textSize="@dimen/textSizeScore"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/score" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="goalBarcelona"
+                    android:text="@string/Button1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/fouls_barcelona" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="foulsBarcelona"
+                    android:text="@string/Button2"
+                    android:background="@color/colorFoulButton"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/yellow_barcelona"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="yellowCardBarcelona"
+                    android:text="@string/Button3"
+                    android:background="@color/colorYellowCardButton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/padding"
+                    android:id="@+id/red_barcelona"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:onClick="redCardBarcelona"
+                    android:text="@string/Button4"
+                    android:background="@color/colorRedCardButton"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:onClick="resetScore"
+            android:text="@string/ResetButton"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

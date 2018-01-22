@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project2 FootballCounter</string>
+    <string name="Team1">Real Madrid</string>
+    <string name="Team2">Barcelona</string>
+    <string name="Button1">GOAL!!!</string>
+    <string name="score">0</string>
+    <string name="Button2">FOUL!</string>
+    <string name="Button3">YELLOW CARD</string>
+    <string name="Button4">RED CARD</string>
+    <string name="ResetButton">RESET</string>
+</resources>
